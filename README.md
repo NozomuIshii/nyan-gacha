@@ -34,7 +34,7 @@ src/NyanGachaSimulator.jsx 冒頭:
     HERO_IMG    ファーストビュー背景。空ならCSSで描画
 
 演出の尺は useEffect 内の wait（R:1300 / SR:2200 / SSR:2800 ミリ秒）。
-SRで「激しい揺れ」が出る確率は handleTap 内の Math.random() < 0.5。
+SSR のみ、タップ後に金の玉璽による激震と確定演出を挟む。
 
 ## 統計の永続化
 
